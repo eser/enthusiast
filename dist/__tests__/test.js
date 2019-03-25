@@ -2,8 +2,8 @@
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
-var compose_1 = tslib_1.__importDefault(require("evangelist/lib/compose"));
-var iterate_1 = tslib_1.__importDefault(require("evangelist/lib/iterate"));
+var compose_1 = tslib_1.__importDefault(require("evangelist/compose"));
+var iterate_1 = tslib_1.__importDefault(require("evangelist/iterate"));
 var fromNodeStream_1 = tslib_1.__importDefault(require("../fromNodeStream"));
 var toNodeStream_1 = tslib_1.__importDefault(require("../toNodeStream"));
 var fs = tslib_1.__importStar(require("fs"));

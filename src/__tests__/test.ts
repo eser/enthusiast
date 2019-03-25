@@ -1,5 +1,5 @@
-import compose from 'evangelist/lib/compose';
-import iterate from 'evangelist/lib/iterate';
+import compose from 'evangelist/compose';
+import iterate from 'evangelist/iterate';
 import fromNodeStream from '../fromNodeStream';
 import toNodeStream from '../toNodeStream';
 import * as fs from 'fs';
