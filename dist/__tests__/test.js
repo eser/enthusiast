@@ -2,11 +2,11 @@
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
+var fs = tslib_1.__importStar(require("fs"));
 var compose_1 = tslib_1.__importDefault(require("evangelist/compose"));
 var iterate_1 = tslib_1.__importDefault(require("evangelist/iterate"));
 var fromNodeStream_1 = tslib_1.__importDefault(require("../fromNodeStream"));
 var toNodeStream_1 = tslib_1.__importDefault(require("../toNodeStream"));
-var fs = tslib_1.__importStar(require("fs"));
 describe('streams', function () {
     test('copy README.md as README.x.md', function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
         return tslib_1.__generator(this, function (_a) {

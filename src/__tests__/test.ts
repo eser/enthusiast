@@ -1,8 +1,8 @@
+import * as fs from 'fs';
 import compose from 'evangelist/compose';
 import iterate from 'evangelist/iterate';
 import fromNodeStream from '../fromNodeStream';
 import toNodeStream from '../toNodeStream';
-import * as fs from 'fs';
 
 describe('streams', () => {
     test('copy README.md as README.x.md', async () => {
@@ -12,6 +12,7 @@ describe('streams', () => {
                 (item) => {
                     const value = item.data.toString('utf8');
 
+                    // eslint-disable-next-line no-console
                     console.log(value);
 
                     return value;
