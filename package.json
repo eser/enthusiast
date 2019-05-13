@@ -2,7 +2,7 @@
   "name": "enthusiast",
   "description": "A functional stream library implementation runs on browsers and node.js",
   "keywords": [],
-  "version": "0.10.1",
+  "version": "0.11.0",
   "homepage": "https://github.com/eserozvataf/enthusiast#readme",
   "author": "Eser Ozvataf <eser@ozvataf.com>",
   "contributors": [
@@ -34,13 +34,13 @@
     "coverage": "jest --coverage && codecov"
   },
   "dependencies": {
-    "evangelist": "^0.10.1",
+    "evangelist": "^0.11.0",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
     "@types/jest": "^24.0.12",
-    "@types/node": "^12.0.0",
-    "@typescript-eslint/parser": "^1.7.0",
+    "@types/node": "^12.0.1",
+    "@typescript-eslint/parser": "^1.9.0",
     "codecov": "^3.4.0",
     "eslint": "^5.16.0",
     "eslint-config-eser": "^2.1.2",
@@ -49,7 +49,7 @@
     "jest": "^24.8.0",
     "rollup": "^1.11.3",
     "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-typescript": "^1.0.1",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
