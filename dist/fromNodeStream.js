@@ -1,7 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = require("tslib");
-var customIterator_1 = tslib_1.__importDefault(require("./types/customIterator"));
+var customIterator_1 = __importDefault(require("./types/customIterator"));
 exports.CustomIterator = customIterator_1.default;
 function fromNodeStream(source, size) {
     return new Promise(function (resolve, reject) {
