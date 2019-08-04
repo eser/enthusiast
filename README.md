@@ -17,7 +17,7 @@ Additionally, as a library, Enthusiast is completely tree-shanking-friendly. You
 
 ## Quick start
 
-Execute `npm install enthusiast` to install enthusiast and its dependencies into your project directory.
+Execute `npm install enthusiast` or `yarn add enthusiast` to install enthusiast and its dependencies into your project directory.
 
 
 ## Usage of modules
