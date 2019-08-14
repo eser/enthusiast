@@ -1,4 +1,4 @@
-(function(g,f){typeof exports==='object'&&typeof module!=='undefined'?f(exports):typeof define==='function'&&define.amd?define(['exports'],f):(g=g||self,f(g.enthusiast={}));}(this,function(exports){'use strict';var CustomIterator = /** @class */ (function () {
+var CustomIterator = (function () {
     function CustomIterator(nextPointer) {
         this.nextPointer = nextPointer;
     }
@@ -13,7 +13,9 @@
         return this;
     };
     return CustomIterator;
-}());function fromNodeStream(source, size) {
+}());
+
+function fromNodeStream(source, size) {
     return new Promise(function (resolve, reject) {
         source.on('readable', function () {
             var nextPointer = function () {
@@ -26,11 +28,22 @@
             resolve(new CustomIterator(nextPointer));
         });
     });
-}function toNodeStream(target) {
+}
+
+function toNodeStream(target) {
     return function (value) { return new Promise(function (resolve, reject) {
         var errorCallback = function (err) { return reject(err); };
         target.on('error', errorCallback);
         target.write(value, function () { return resolve(value); });
         target.removeListener('error', errorCallback);
     }); };
-}exports.CustomIterator=CustomIterator;exports.fromNodeStream=fromNodeStream;exports.toNodeStream=toNodeStream;Object.defineProperty(exports,'__esModule',{value:true});}));//# sourceMappingURL=index.min.js.map
+}
+
+var library = {
+    fromNodeStream: fromNodeStream,
+    CustomIterator: CustomIterator,
+    toNodeStream: toNodeStream,
+};
+
+export default library;
+export { CustomIterator, fromNodeStream, toNodeStream };
