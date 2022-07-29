@@ -8,6 +8,12 @@
 [![license][license-image]][license-url]
 
 
+## Update (July 2022)
+
+DEPRECATED in favor of [hex](https://github.com/eserozvataf/hex).
+See https://github.com/eserozvataf/hex for details.
+
+
 ## What is the Enthusiast?
 
 Enthusiast is a stream library implementation that utilizes generator functions to make streams work in functional way.
